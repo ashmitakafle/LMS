@@ -1,0 +1,348 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+  overflow-x: hidden;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+/*--------------------------------------------- STYLE FOR MAIN CODE-----------------------------------------------------*/
+
+.wrapper {
+  height: 720px;
+  width: 1536px;
+  /*background-color: red;*/
+}
+/*STYLE FOR HEADER PART*/
+header {
+  height: 120px;
+  width: 1536px;
+  background-color: black;
+}
+.logo {
+  float: left;
+  padding-left: 10px;
+}
+.logo img {
+  padding-left: 15px;
+  height: 70px;
+  width: 135px;
+}
+nav {
+  float: right;
+  word-spacing: 30px;
+  padding: 20px;
+}
+nav a:hover {
+  background-color: #000;
+  color: white;
+}
+
+nav li {
+  display: inline-block;
+  line-height: 70px;
+}
+li a {
+  color: white;
+  padding-right: 20px;
+}
+
+/*STYLE FOR SECTION PART*/
+section {
+  margin-top: 0px;
+  height: 750px;
+  width: 1536px;
+  /*background-color: grey;*/
+}
+.img {
+  width: 1536px;
+  height: 750px;
+  background: url(images/2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.box {
+  color: white;
+  background-color: #272727;
+  height: 200px;
+  width: 375px;
+  margin: 180px;
+  margin-left: 100px;
+  opacity: 0.8;
+}
+.box h1 {
+  text-align: center;
+  padding: 5px;
+}
+
+footer {
+  height: 100px;
+  width: 1536px;
+  background-color: black;
+}
+
+/*------------------------------STYLE FOR STUDENT LOGIN-------------------------------------------*/
+
+/*STYLE FOR SECTION*/
+.login__photo {
+  width: 1536px;
+  height: 750px;
+  background: url(images/6.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.box1 {
+  margin-top: 70px;
+  padding: 10px;
+  height: 400px;
+  width: 600px;
+  background-color: #474545;
+  opacity: 0.9;
+  margin-left: 500px;
+}
+.box1 h1 {
+  text-align: center;
+}
+
+/*STYLE FOR STUDENT LOGIN FORM*/
+.login {
+  margin-left: 100px;
+  height: 150px;
+  width: 400px;
+}
+.login .form-control {
+  text-align: center;
+}
+
+/*-------------------------------------STYLE FOR STUDENT REGISTRATION---------------------------------------------------*/
+
+/*STYLE FOR SECTION PART*/
+
+.signup__photo {
+  width: 1536px;
+  height: 800px;
+  background-image: url(images/9.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.box2 {
+  margin-top: 10px;
+  padding: 10px;
+  height: 650px;
+  width: 550px;
+  background-color: #1e1e1e;
+  opacity: 0.8;
+  margin-left: 7px;
+}
+.registration {
+  margin-left: 60px;
+  height: 40px;
+  width: 400px;
+}
+.registration .form-control {
+  text-align: center;
+}
+
+/*------------------------------------STYLE FOR FEEDBACK PAGE--------------------------------------*/
+.feedback__photo {
+  width: 1536px;
+  height: 800px;
+  background-image: url(images/feedback.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.feedback__container {
+  height: 600px;
+  width: 750px;
+  background-color: black;
+  opacity: 0.4;
+  margin: 30px 350px;
+}
+.feedback__container h1 {
+  font-size: 20px;
+  color: white;
+  margin-left: 20px;
+  padding-top: 20px;
+}
+
+.feedback__form {
+  margin: 20px 20px;
+}
+.feedback__form .form-control {
+  height: 100px;
+}
+/*----------------------------------------BOOKS---------------------------*/
+.books__search {
+  margin-left: 700px;
+}
+
+/*--------------------------------------UPDATE PASSWORD---------------*/
