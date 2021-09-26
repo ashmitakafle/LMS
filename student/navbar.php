@@ -20,7 +20,12 @@ include "connection.php";
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+<style type="text/css">
+   nav ul li a:hover {
+  color: #91640f;
+ 
+}
+  </style>
 
   </head>
   <body>
@@ -102,7 +107,7 @@ include "connection.php";
          
           <ul>
           
-          <li><a style="text-decoration:none;" href="">
+          <li><a style="text-decoration:none;" href="profile.php">
           <span style="margin-right:500px;">
           <?php
            echo "<img style='height:60px;width:60px;border-radius:50%;padding:5px;' src='images/".$_SESSION['image']."'>";

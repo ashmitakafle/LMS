@@ -26,6 +26,13 @@ session_start();
   </head>
 
   <style type="text/css">
+   nav ul li a:hover {
+  background-color: #91640f;
+  color: black;
+  
+   }
+
+
     .fa {
       margin: 10px 5px;
       padding: 5px;
@@ -124,13 +131,13 @@ session_start();
 
       <footer>
         <div style="margin: 0px 650px">
-          <a style="text-decoration: none" href="#" class="fa fa-facebook"></a>
-          <a style="text-decoration: none" href="#" class="fa fa-whatsapp"></a>
-          <a style="text-decoration: none" href="#" class="fa fa-twitter"></a>
-          <a style="text-decoration: none" href="#" class="fa fa-instagram"></a>
+          <a style="text-decoration: none" href="https://www.facebook.com/search/top/?q=student%20note" class="fa fa-facebook"></a>
+          <a style="text-decoration: none" href="https://www.whatsapp.com/" class="fa fa-whatsapp"></a>
+          <a style="text-decoration: none" href="https://twitter.com/librarymanagem2" class="fa fa-twitter"></a>
+          <a style="text-decoration: none" href="https://www.instagram.com/librarymanagementsystem/" class="fa fa-instagram"></a>
           <a
             style="text-decoration: none"
-            href="#"
+            href="https://www.youtube.com/"
             class="fa fa-youtube-play"
           ></a>
         </div>

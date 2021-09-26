@@ -23,7 +23,12 @@ include "connection.php";
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-
+    <style type="text/css">
+   nav ul li a:hover {
+  color: #91640f;
+ 
+}
+  </style>
   </head>
   <body>
     <div class="wrapper">
@@ -48,7 +53,7 @@ include "connection.php";
          <nav style="padding-top:3px;">
           <ul>
           <li><a style="text-decoration:none;" href="">
-          <span style="margin-right:390px;">
+          <span style="margin-right:300px;">
           <?php
            echo "<img style='height:60px;width:60px;border-radius:50%;padding:5px;' src='images/".$_SESSION['image']."'>";
             echo $_SESSION['login_username'];
@@ -61,7 +66,10 @@ include "connection.php";
             <li><a style="text-decoration: none" href="index.php">HOME</a></li>
             <li><a style="text-decoration: none" href="books.php">BOOKS</a></li>
             <li><a style="text-decoration: none" href="student.php">STUDENT-INFROMATION</a></li>
+            
             <li><a style="text-decoration: none" href="logout.php">LOGOUT</a></li>
+            <li><a style="text-decoration: none" href="feedback.php">FEEDBACK</a></li>
+            
           
           
   

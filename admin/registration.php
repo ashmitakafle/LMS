@@ -21,9 +21,18 @@ include "connection.php";
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+    <style type="text/css">
+    input::-webkit-inner-spin-button {
+  opacity: 0;
+  display: none;
+}
 
+
+
+    </style>
 
   </head>
+
   <body>
         <div class="signup__photo ">
           <br />
@@ -57,6 +66,8 @@ include "connection.php";
               <input class="form-control"
                 type="password"
                 name="Password"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
                 placeholder="Password"
                 required
               /><br>
@@ -69,6 +80,8 @@ include "connection.php";
                 required
               /><br>
               <input class="form-control"
+              oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              maxlength = "10"
                 type="number"
                 name="Contact"
                 placeholder="Contact"
@@ -109,6 +122,11 @@ include "connection.php";
             $count=$count+1;
           }
         }
+        $email=$_POST['Email'];
+     
+        $result = mysqli_query($conn,"SELECT * FROM `student` where email='".$email."';");
+        $num_rows = mysqli_num_rows($result);
+        if($num_rows==0){
         
              
          if($count==0){  
@@ -126,6 +144,7 @@ include "connection.php";
 
          <?php
         }
+      
 
        else{
          ?>
@@ -137,6 +156,16 @@ include "connection.php";
          <?php
        }
       }
+       else{
+        ?>
+        <script type ="text/javascript">
+        alert("Email already exists");
+        </script>
+
+
+        <?php
+      }
+    }
 
         ?>
   </body>

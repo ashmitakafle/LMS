@@ -19,7 +19,7 @@ body
 .signup__wrapper{
     height:400px;
     width:600px;
-    background-color:black;
+    background-color:#3c3c4a;
     margin:80px 450px;
   
     color:white;

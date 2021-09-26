@@ -200,10 +200,6 @@ nav {
   word-spacing: 30px;
   padding: 20px;
 }
-nav a:hover {
-  background-color: #000;
-  color: white;
-}
 
 nav li {
   display: inline-block;
