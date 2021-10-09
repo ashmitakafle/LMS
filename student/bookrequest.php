@@ -182,6 +182,7 @@ include "connection.php";
           echo "<th>"; echo "Return Date"; echo "</th>";
 
       
+          
           echo "</tr>";
           $i=0;
          while($row=mysqli_fetch_assoc($res)){
